@@ -3,7 +3,7 @@ let currentLang = localStorage.getItem('portfolio_lang') || 'id';
 
 function renderLinks(links) {
   if (!links || links.length === 0) return '';
-  return links.map((link) => `<a href="${link.url}">${link.name}</a>`).join(' / ') + '<br>';
+  return links.map((link) => `<a href="${link.url}" target="_blank" rel="noopener noreferrer">${link.name}</a>`).join(' / ') + '<br>';
 }
 
 function renderItem(item) {
@@ -19,11 +19,11 @@ function renderItem(item) {
       
     </td>
     <td class="project-content-col" style="padding: 16px; width: 75%; vertical-align: middle">
-      <a href="${item.links && item.links.length > 0 ? item.links[0].url : '#'}">
+      <a href="${item.links && item.links.length > 0 ? item.links[0].url : '#'}" target="_blank" rel="noopener noreferrer">
         <span class="papertitle">${item.title}</span>
       </a>
       <br />
-      ${item.role ? `<strong>${item.companyUrl ? `<a href="${item.companyUrl}">${item.role}</a>` : item.role}</strong><br />` : ''}
+      ${item.role ? `<strong>${item.companyUrl ? `<a href="${item.companyUrl}" target="_blank" rel="noopener noreferrer">${item.role}</a>` : item.role}</strong><br />` : ''}
       <em>${item.event || item.location}</em>, ${item.date}
       <br />
       ${renderLinks(item.links)}
@@ -33,37 +33,36 @@ function renderItem(item) {
   `;
 }
 
-
 // Pagination logic
 const ITEMS_PER_PAGE = 3;
 
 function renderListWithLoadMore(containerId, dataList, renderFunc) {
   const container = document.getElementById(containerId);
   if (!container) return;
-  
+
   if (!dataList || dataList.length === 0) {
     const uiData = i18nData[currentLang].ui;
     container.innerHTML = `<tr><td style="padding:16px;">${uiData.noData}</td></tr>`;
     return;
   }
-  
+
   let currentShown = 0;
   container.innerHTML = '';
-  
+
   function showMoreItems() {
     const nextLimit = Math.min(currentShown + ITEMS_PER_PAGE, dataList.length);
     const itemsToAdd = dataList.slice(currentShown, nextLimit);
-    
+
     const htmlString = itemsToAdd.map(renderFunc).join('');
-    
+
     const loadMoreBtn = document.getElementById(`load-more-${containerId}`);
     if (loadMoreBtn) {
       loadMoreBtn.remove();
     }
-    
+
     container.insertAdjacentHTML('beforeend', htmlString);
     currentShown = nextLimit;
-    
+
     if (currentShown < dataList.length) {
       const uiData = i18nData[currentLang].ui;
       const btnRow = `
@@ -80,7 +79,7 @@ function renderListWithLoadMore(containerId, dataList, renderFunc) {
       container.insertAdjacentHTML('beforeend', btnRow);
     }
   }
-  
+
   container.showMore = showMoreItems;
   showMoreItems();
 }
@@ -89,21 +88,26 @@ function renderListWithLoadMore(containerId, dataList, renderFunc) {
 function renderPortfolio(lang) {
   const data = i18nData[lang];
   const ui = data.ui;
-  
+
   // Set the selector to the right value
   document.getElementById('langSwitcher').value = lang;
-  
+
   // Update Headers
-  const elExp = document.getElementById('hdr-experiences'); if(elExp) elExp.textContent = ui.experiences;
-  const elPub = document.getElementById('hdr-publications'); if(elPub) elPub.textContent = ui.publications;
-  const elProj = document.getElementById('hdr-projects'); if(elProj) elProj.textContent = ui.projects;
-  const elAch = document.getElementById('hdr-achievements'); if(elAch) elAch.textContent = ui.achievements;
-  const elFoot = document.getElementById('txt-footer'); if(elFoot) elFoot.innerHTML = ui.footer;
+  const elExp = document.getElementById('hdr-experiences');
+  if (elExp) elExp.textContent = ui.experiences;
+  const elPub = document.getElementById('hdr-publications');
+  if (elPub) elPub.textContent = ui.publications;
+  const elProj = document.getElementById('hdr-projects');
+  if (elProj) elProj.textContent = ui.projects;
+  const elAch = document.getElementById('hdr-achievements');
+  if (elAch) elAch.textContent = ui.achievements;
+  const elFoot = document.getElementById('txt-footer');
+  if (elFoot) elFoot.innerHTML = ui.footer;
 
   // Populate Profile
   document.getElementById('profile-name').textContent = data.profile.name;
 
-  const bioHtml = `Hi! I'm a ${data.profile.title} at <a href="${data.profile.institutionUrl}">${data.profile.institution}</a> and currently working as a ${data.profile.currentRole} at <a href="${data.profile.currentCompanyUrl}">${data.profile.currentCompany}</a>.<br><br>${data.profile.bio}`;
+  const bioHtml = `Hi! I'm a ${data.profile.title} at <a href="${data.profile.institutionUrl}" target="_blank" rel="noopener noreferrer">${data.profile.institution}</a> and currently working as a ${data.profile.currentRole} at <a href="${data.profile.currentCompanyUrl}" target="_blank" rel="noopener noreferrer">${data.profile.currentCompany}</a>.<br><br>${data.profile.bio}`;
   document.getElementById('profile-bio').innerHTML = bioHtml;
 
   document.getElementById('profile-email').href = `mailto:${data.profile.email}`;
@@ -115,22 +119,22 @@ function renderPortfolio(lang) {
 
   // Populate Sections
   renderListWithLoadMore('experiences-list', data.experiences, renderItem);
-  
+
   // Load Publications from BibTeX
   if (document.getElementById('publications-list')) {
-    loadBibtex('data/publications.bib').then(publications => {
+    loadBibtex('data/publications.bib').then((publications) => {
       if (publications && publications.length > 0) {
         // Change description text based on language
-        publications.forEach(pub => {
-            if (pub.description === "Baca selengkapnya melalui tautan yang tersedia." || pub.description === "Read more via the provided links.") {
-                pub.description = ui.bibtexFallback;
-            }
+        publications.forEach((pub) => {
+          if (pub.description === 'Baca selengkapnya melalui tautan yang tersedia.' || pub.description === 'Read more via the provided links.') {
+            pub.description = ui.bibtexFallback;
+          }
         });
         renderListWithLoadMore('publications-list', publications, renderItem);
       }
     });
   }
-  
+
   renderListWithLoadMore('projects-list', data.projects, renderItem);
   renderListWithLoadMore('achievements-list', data.achievements, renderItem);
 }

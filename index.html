@@ -9,10 +9,9 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
   </head>
   <body>
-
     <!-- Language Switcher -->
-    <div style="position: absolute; top: 15px; right: 20px; z-index: 100;">
-      <select id="langSwitcher" onchange="changeLanguage(this.value)" style="padding: 5px; border-radius: 4px; border: 1px solid #ccc; font-family: 'Lato', sans-serif;">
+    <div style="position: absolute; top: 15px; right: 20px; z-index: 100">
+      <select id="langSwitcher" onchange="changeLanguage(this.value)" style="padding: 5px; border-radius: 4px; border: 1px solid #ccc; font-family: 'Lato', sans-serif">
         <option value="id">🇮🇩 Indonesia</option>
         <option value="en">🇬🇧 English</option>
       </select>
@@ -29,20 +28,26 @@
                     <p class="name" style="text-align: center" id="profile-name">Moh Angga Yunus</p>
                     <p id="profile-bio"></p>
                     <p style="text-align: center">
-                      <a id="profile-email" href="#">Email</a> &nbsp;/&nbsp;
-                      <a id="profile-cv" href="#">CV</a> &nbsp;/&nbsp;
-                      <a id="profile-bio-link" href="#">Bio</a> &nbsp;/&nbsp;
-                      <a id="profile-linkedin" href="#">LinkedIn</a> &nbsp;/&nbsp;
-                      <a id="profile-github" href="#">Github</a>
+                      <a id="profile-email" href="#" target="_blank" rel="noopener noreferrer">Email</a> &nbsp;/&nbsp; <a id="profile-cv" href="#" target="_blank" rel="noopener noreferrer">CV</a> &nbsp;/&nbsp;
+                      <a id="profile-bio-link" href="#" target="_blank" rel="noopener noreferrer">Bio</a> &nbsp;/&nbsp;
+                      <a id="profile-linkedin" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a> &nbsp;/&nbsp;
+                      <a id="profile-github" href="#" target="_blank" rel="noopener noreferrer">Github</a>
                     </p>
                   </td>
                   <td class="profile-photo-col" style="padding: 2.5%; width: 37%; max-width: 37%">
-                    <a href="#"><img id="profile-image" alt="profile photo" src="images/profile.webp" class="hoverZoomLink" style="width: 100%; max-width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center bottom; border-radius: 50%" /></a>
+                    <a href="#"
+                      ><img
+                        id="profile-image"
+                        alt="profile photo"
+                        src="images/profile.webp"
+                        class="hoverZoomLink"
+                        style="width: 100%; max-width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center bottom; border-radius: 50%"
+                    /></a>
                   </td>
                 </tr>
               </tbody>
             </table>
-            
+
             <!-- Experiences Section -->
             <table style="width: 100%; border: 0px; border-spacing: 0px; border-collapse: separate; margin-right: auto; margin-left: auto">
               <tbody>
@@ -54,10 +59,8 @@
               </tbody>
             </table>
             <table style="width: 100%; border: 0px; border-spacing: 0px 10px; border-collapse: separate; margin-right: auto; margin-left: auto">
-              <tbody id="experiences-list">
-              </tbody>
+              <tbody id="experiences-list"></tbody>
             </table>
-
 
             <!-- Publications Section -->
             <table style="width: 100%; border: 0px; border-spacing: 0px; border-collapse: separate; margin-right: auto; margin-left: auto">
@@ -70,8 +73,7 @@
               </tbody>
             </table>
             <table style="width: 100%; border: 0px; border-spacing: 0px 10px; border-collapse: separate; margin-right: auto; margin-left: auto">
-              <tbody id="publications-list">
-              </tbody>
+              <tbody id="publications-list"></tbody>
             </table>
 
             <!-- Projects Section -->
@@ -85,8 +87,7 @@
               </tbody>
             </table>
             <table style="width: 100%; border: 0px; border-spacing: 0px 10px; border-collapse: separate; margin-right: auto; margin-left: auto">
-              <tbody id="projects-list">
-              </tbody>
+              <tbody id="projects-list"></tbody>
             </table>
 
             <!-- Achievements Section -->
@@ -100,8 +101,7 @@
               </tbody>
             </table>
             <table style="width: 100%; border: 0px; border-spacing: 0px 10px; border-collapse: separate; margin-right: auto; margin-left: auto">
-              <tbody id="achievements-list">
-              </tbody>
+              <tbody id="achievements-list"></tbody>
             </table>
 
             <table style="width: 100%; border: 0px; border-spacing: 0px; border-collapse: separate; margin-right: auto; margin-left: auto">
@@ -118,7 +118,7 @@
         </tr>
       </tbody>
     </table>
-    
+
     <!-- Load data dynamically -->
     <script src="bibtex_parser.js"></script>
     <script src="locales/id.js"></script>

@@ -7,7 +7,7 @@ const langEN = {
     "achievements": "Achievements",
     "loadMore": "Load More",
     "noData": "No data available.",
-    "footer": "Template modified from <a href='https://github.com/jonbarron/jonbarron_website'>Jon Barron's original source</a>.",
+    "footer": "Template modified from <a href='https://github.com/jonbarron/jonbarron_website' target='_blank' rel='noopener noreferrer'>Jon Barron's original source</a>.",
     "bibtexFallback": "Read more via the provided links."
   },
   "profile": {

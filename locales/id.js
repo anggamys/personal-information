@@ -7,7 +7,7 @@ const langID = {
     "achievements": "Penghargaan",
     "loadMore": "Tampilkan Lebih Banyak",
     "noData": "Tidak ada data.",
-    "footer": "Template dimodifikasi dari <a href='https://github.com/jonbarron/jonbarron_website'>sumber asli Jon Barron</a>.",
+    "footer": "Template dimodifikasi dari <a href='https://github.com/jonbarron/jonbarron_website' target='_blank' rel='noopener noreferrer'>sumber asli Jon Barron</a>.",
     "bibtexFallback": "Baca selengkapnya melalui tautan yang tersedia."
   },
   "profile": {
