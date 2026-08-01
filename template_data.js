@@ -79,21 +79,7 @@ const portfolioData = {
   ],
   
 
-  publications: [
-    {
-      id: "pub1",
-      title: "Pengembangan Sistem Point of Sale berbasis Java (Studi Kasus: Toko Berkah Abadi)",
-      role: "Moh Angga Yunus, Dyah Inkud Daifatur Rahma, M. Yusuf Arohman, M. Zaky Priambada Anugrah, Achmad Fathoni, & Fawwaz Ali Akbar",
-      event: "Prosiding Seminar Nasional Informatika Bela Negara (SANTIKA), 5(1), 22–35",
-      date: "2025",
-      description: "Penelitian mengenai pengembangan sistem kasir (Point of Sale) menggunakan bahasa pemrograman Java untuk meningkatkan efisiensi transaksi pada studi kasus Toko Berkah Abadi.",
-      image: "images/project_placeholder.png",
-      links: [
-        { name: "DOI", url: "https://doi.org/10.33005/santika.v5i1.589" }
-      ]
-    }
-  ],
-  
+      
   projects: [
     {
       id: "proj1",
