@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>Nama Anda</title>
+
+    <meta name="author" content="Nama Anda" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  </head>
+
+  <body>
+    <table style="width: 100%; max-width: 800px; border: 0px; border-spacing: 0px; border-collapse: separate; margin-right: auto; margin-left: auto">
+      <tbody>
+        <tr style="padding: 0px">
+          <td style="padding: 0px">
+            <table style="width: 100%; border: 0px; border-spacing: 0px; border-collapse: separate; margin-right: auto; margin-left: auto">
+              <tbody>
+                <tr style="padding: 0px">
+                  <td style="padding: 2.5%; width: 63%; vertical-align: middle">
+                    <p class="name" style="text-align: center">Nama Anda</p>
+                    <p>Halo! Saya adalah [Pekerjaan/Status Anda saat ini] di [Perusahaan/Universitas Anda]. Saya memiliki minat pada [Bidang Keahlian/Minat Anda]. Sebelumnya, saya [Pengalaman sebelumnya].</p>
+                    <p style="text-align: center">
+                      <a href="mailto:email@anda.com">Email</a> &nbsp;/&nbsp; <a href="data/CV_Anda.pdf">CV</a> &nbsp;/&nbsp; <a href="data/Bio_Anda.txt">Bio</a> &nbsp;/&nbsp;
+                      <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Scholar</a> &nbsp;/&nbsp; <a href="https://twitter.com/twitter_anda">Twitter</a> &nbsp;/&nbsp;
+                      <a href="https://github.com/username_anda/">Github</a>
+                    </p>
+                  </td>
+                  <td style="padding: 2.5%; width: 37%; max-width: 37%">
+                    <a href="images/IMG_5714.JPG"><img alt="profile photo" src="images/IMG_5714.JPG" class="hoverZoomLink" style="width: 100%; max-width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center bottom; border-radius: 50%" /></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table style="width: 100%; border: 0px; border-spacing: 0px; border-collapse: separate; margin-right: auto; margin-left: auto">
+              <tbody>
+                <tr>
+                  <td style="padding: 16px; width: 100%; vertical-align: middle">
+                    <h2>Research</h2>
+                    <p>Ini adalah bagian di mana Anda dapat menambahkan deskripsi singkat tentang penelitian, proyek, atau karya-karya yang pernah Anda lakukan.</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table style="width: 100%; border: 0px; border-spacing: 0px 10px; border-collapse: separate; margin-right: auto; margin-left: auto">
+              <tbody>
+                <tr onmouseout="project1_stop()" onmouseover="project1_start()">
+                  <td style="padding: 16px; width: 25%; vertical-align: middle">
+                    <div class="one">
+                      <div class="two" id="project1_image">
+                        <img src="images/project_placeholder.png" width="160" style="object-fit: cover" />
+                      </div>
+                      <img src="images/project_placeholder.png" width="160" style="object-fit: cover" />
+                    </div>
+                    <script type="text/javascript">
+                      function project1_start() {
+                        document.getElementById('project1_image').style.opacity = '1';
+                      }
+                      function project1_stop() {
+                        document.getElementById('project1_image').style.opacity = '0';
+                      }
+                      project1_stop();
+                    </script>
+                  </td>
+                  <td style="padding: 16px; width: 75%; vertical-align: middle">
+                    <a href="https://link-ke-proyek-anda.com">
+                      <span class="papertitle">Judul Proyek atau Karya Anda</span>
+                    </a>
+                    <br />
+                    <strong>Nama Anda</strong>, <a href="#">Rekan Tim 1</a>,
+                    <a href="#">Rekan Tim 2</a>
+                    <br />
+                    <em>Nama Konferensi/Jurnal/Acara</em>, 2024
+                    <br />
+                    <a href="https://link-ke-proyek-anda.com">website</a>
+                    /
+                    <a href="https://link-video-anda.com">video</a>
+                    /
+                    <a href="https://github.com/username/repo">code</a>
+                    <p>Deskripsi singkat tentang proyek atau publikasi Anda. Apa yang Anda kerjakan, teknologi apa yang digunakan, dan apa hasil yang dicapai.</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table style="width: 100%; border: 0px; border-spacing: 0px; border-collapse: separate; margin-right: auto; margin-left: auto">
+              <tbody>
+                <tr>
+                  <td style="padding: 0px">
+                    <br />
+                    <p style="text-align: right; font-size: small">Template ini dimodifikasi dari <a href="https://github.com/jonbarron/jonbarron_website">sumber asli Jon Barron</a>.</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
