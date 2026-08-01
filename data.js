@@ -46,6 +46,7 @@ const portfolioData = {
       id: 'exp3',
       title: 'Backend Developer Intern',
       role: 'CV FlyHigh Sinergi Indonesia',
+      companyUrl: 'https://www.linkedin.com/company/cv-flyhigh-sinergi-indonesia/',
       location: 'Surabaya, Indonesia',
       date: 'Mar - Jun 2026',
       description:
