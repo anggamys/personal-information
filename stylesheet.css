@@ -168,51 +168,56 @@ span.highlight {
 /* Mobile responsiveness */
 @media screen and (max-width: 768px) {
   /* Convert tables to block layout */
-  table, thead, tbody, th, td, tr {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
     display: block !important;
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
   }
-  
+
   /* Reset padding for better mobile view */
   td {
     padding: 10px 15px !important;
   }
-  
+
   /* Make the header elements flex so we can reverse their order (photo on top) */
   tr.profile-row {
     display: flex !important;
     flex-direction: column-reverse !important;
   }
-  
+
   /* Profile Photo Column Styling */
   .profile-photo-col {
     text-align: center;
     padding-bottom: 0px !important;
   }
-  
+
   /* Restrict profile image size on mobile */
   .profile-photo-col img {
     max-width: 200px !important;
     margin: 0 auto;
   }
-  
+
   /* Bio Column Styling */
   .profile-bio-col {
     padding-top: 20px !important;
   }
-  
+
   /* Project/Experience items styling */
   .project-image-col {
     text-align: center;
     padding-bottom: 5px !important;
   }
-  
+
   .project-content-col {
     padding-top: 5px !important;
   }
-  
+
   /* Center the image container in project rows */
   .project-image-col .one {
     margin: 0 auto;
