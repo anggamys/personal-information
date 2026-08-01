@@ -20,8 +20,7 @@ function renderItem(item) {
         <span class="papertitle">${item.title}</span>
       </a>
       <br />
-      <strong>${item.companyUrl ? `<a href="${item.companyUrl}">${item.role}</a>` : item.role}</strong>
-      <br />
+      ${item.role ? `<strong>${item.companyUrl ? `<a href="${item.companyUrl}">${item.role}</a>` : item.role}</strong><br />` : ''}
       <em>${item.event || item.location}</em>, ${item.date}
       <br />
       ${renderLinks(item.links)}
