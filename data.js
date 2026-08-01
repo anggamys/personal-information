@@ -22,6 +22,7 @@ const portfolioData = {
       id: 'exp1',
       title: 'Data Engineer',
       role: 'Badan Riset dan Inovasi Nasional (BRIN)',
+      companyUrl: 'https://www.brin.go.id/',
       location: 'Jakarta, Indonesia',
       date: 'Jul 2026 - Present',
       description:
@@ -33,6 +34,7 @@ const portfolioData = {
       id: 'exp2',
       title: 'Research Intern',
       role: 'Badan Riset dan Inovasi Nasional (BRIN)',
+      companyUrl: 'https://www.brin.go.id/',
       location: 'Jakarta, Indonesia',
       date: 'Jan - May 2026',
       description:
