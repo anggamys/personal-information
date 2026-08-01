@@ -175,8 +175,8 @@ function renderLinks(links) {
 
 function renderItem(item) {
   return `
-  <tr onmouseout="${item.id}_stop()" onmouseover="${item.id}_start()">
-    <td style="padding: 16px; width: 25%; vertical-align: middle">
+  <tr class="item-row" onmouseout="${item.id}_stop()" onmouseover="${item.id}_start()">
+    <td class="project-image-col" style="padding: 16px; width: 25%; vertical-align: middle">
       <div class="one">
         <div class="two" id="${item.id}_image">
           <img src="${item.image}" width="160" style="object-fit: cover; aspect-ratio: 1/1" />
@@ -193,7 +193,7 @@ function renderItem(item) {
         ${item.id}_stop();
       </script>
     </td>
-    <td style="padding: 16px; width: 75%; vertical-align: middle">
+    <td class="project-content-col" style="padding: 16px; width: 75%; vertical-align: middle">
       <a href="${item.links && item.links.length > 0 ? item.links[0].url : '#'}">
         <span class="papertitle">${item.title}</span>
       </a>
