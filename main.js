@@ -19,7 +19,7 @@ function renderItem(item) {
       
     </td>
     <td class="project-content-col" style="padding: 16px; width: 75%; vertical-align: middle">
-      <a href="${item.links && item.links.length > 0 ? item.links[0].url : '#'}" target="_blank" rel="noopener noreferrer">
+      <a href="${item.links && item.links.length > 0 ? item.links[0].url : '#'}" ${item.links && item.links.length > 0 ? 'target="_blank" rel="noopener noreferrer"' : ''}>
         <span class="papertitle">${item.title}</span>
       </a>
       <br />
@@ -111,10 +111,27 @@ function renderPortfolio(lang) {
   document.getElementById('profile-bio').innerHTML = bioHtml;
 
   document.getElementById('profile-email').href = `mailto:${data.profile.email}`;
-  document.getElementById('profile-cv').href = data.profile.cvLink;
-  document.getElementById('profile-bio-link').href = data.profile.bioLink;
-  document.getElementById('profile-linkedin').href = data.profile.linkedin;
-  document.getElementById('profile-github').href = data.profile.github;
+  
+  const linksToSet = [
+    { id: 'profile-cv', url: data.profile.cvLink },
+    { id: 'profile-bio-link', url: data.profile.bioLink },
+    { id: 'profile-linkedin', url: data.profile.linkedin },
+    { id: 'profile-github', url: data.profile.github }
+  ];
+  
+  linksToSet.forEach(link => {
+    const el = document.getElementById(link.id);
+    if (el) {
+      el.href = link.url || '#';
+      if (link.url && link.url !== '#') {
+        el.setAttribute('target', '_blank');
+        el.setAttribute('rel', 'noopener noreferrer');
+      } else {
+        el.removeAttribute('target');
+        el.removeAttribute('rel');
+      }
+    }
+  });
   document.getElementById('profile-image').src = data.profile.image;
 
   // Populate Sections
