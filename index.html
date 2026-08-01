@@ -9,6 +9,15 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
   </head>
   <body>
+
+    <!-- Language Switcher -->
+    <div style="position: absolute; top: 15px; right: 20px; z-index: 100;">
+      <select id="langSwitcher" onchange="changeLanguage(this.value)" style="padding: 5px; border-radius: 4px; border: 1px solid #ccc; font-family: 'Lato', sans-serif;">
+        <option value="id">🇮🇩 Indonesia</option>
+        <option value="en">🇬🇧 English</option>
+      </select>
+    </div>
+
     <table style="width: 100%; max-width: 800px; border: 0px; border-spacing: 0px; border-collapse: separate; margin-right: auto; margin-left: auto">
       <tbody>
         <tr style="padding: 0px">
@@ -39,7 +48,7 @@
               <tbody>
                 <tr>
                   <td style="padding: 16px; width: 100%; vertical-align: middle">
-                    <h2>Experiences</h2>
+                    <h2 id="hdr-experiences">Experiences</h2>
                   </td>
                 </tr>
               </tbody>
@@ -55,7 +64,7 @@
               <tbody>
                 <tr>
                   <td style="padding: 16px; width: 100%; vertical-align: middle">
-                    <h2>Publications</h2>
+                    <h2 id="hdr-publications">Publications</h2>
                   </td>
                 </tr>
               </tbody>
@@ -70,7 +79,7 @@
               <tbody>
                 <tr>
                   <td style="padding: 16px; width: 100%; vertical-align: middle">
-                    <h2>Projects & Activities</h2>
+                    <h2 id="hdr-projects">Projects & Activities</h2>
                   </td>
                 </tr>
               </tbody>
@@ -85,7 +94,7 @@
               <tbody>
                 <tr>
                   <td style="padding: 16px; width: 100%; vertical-align: middle">
-                    <h2>Achievements</h2>
+                    <h2 id="hdr-achievements">Achievements</h2>
                   </td>
                 </tr>
               </tbody>
@@ -100,7 +109,7 @@
                 <tr>
                   <td style="padding: 0px">
                     <br />
-                    <p style="text-align: right; font-size: small">Template dimodifikasi dari <a href="https://github.com/jonbarron/jonbarron_website">sumber asli Jon Barron</a>.</p>
+                    <p id="txt-footer" style="text-align: right; font-size: small">Template dimodifikasi dari <a href="https://github.com/jonbarron/jonbarron_website">sumber asli Jon Barron</a>.</p>
                   </td>
                 </tr>
               </tbody>

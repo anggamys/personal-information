@@ -89,7 +89,7 @@ function formatForTemplate(bibEntry) {
     role: authors,
     event: venue,
     date: d.year || '',
-    description: d.abstract || 'Baca selengkapnya melalui tautan yang tersedia.',
+    description: d.abstract || "Baca selengkapnya melalui tautan yang tersedia.",
     image: d.image || 'images/project_placeholder.png',
     links: links,
   };
