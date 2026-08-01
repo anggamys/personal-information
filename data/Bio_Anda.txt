@@ -1,1 +1,7 @@
-Halo! Saya adalah [Pekerjaan/Status] dengan fokus di bidang [Keahlian]. Saya tertarik dengan [Topik Riset/Minat].
+Moh Angga Yunus
+Computer Science Student at UPN "Veteran" Jawa Timur
+Backend Developer Intern at CV FlyHigh Sinergi Indonesia
+
+Computer science student with hands-on experience in software development, autonomous systems, and applied research. Has led student research teams, built internal systems, and contributed to research projects in collaboration with national research institutions. Interested in working on practical systems that solve real problems through iteration and teamwork.
+
+Technical Skills: Advanced in PHP, JavaScript, Java, HTML, CSS, and MySQL; Proficient in Python, C, C++, React, Vue, Node.js, Express.js, NextJs, NuxtJs, NestJs TailwindCSS, MongoDB, Firebase, Docker, K6, Postman, ROS.
