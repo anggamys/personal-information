@@ -228,9 +228,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const experiencesHtml = portfolioData.experiences.map(renderItem).join('');
   document.getElementById('experiences-list').innerHTML = experiencesHtml;
   
-  if (portfolioData.publications && document.getElementById('publications-list')) {
-    const publicationsHtml = portfolioData.publications.map(renderItem).join('');
-    document.getElementById('publications-list').innerHTML = publicationsHtml;
+  // Load Publications from BibTeX
+  if (document.getElementById('publications-list')) {
+    loadBibtex('data/publications.bib').then(publications => {
+      if (publications && publications.length > 0) {
+        const publicationsHtml = publications.map(renderItem).join('');
+        document.getElementById('publications-list').innerHTML = publicationsHtml;
+      }
+    });
   }
   
   const projectsHtml = portfolioData.projects.map(renderItem).join('');
