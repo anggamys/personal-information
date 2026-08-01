@@ -2,15 +2,12 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
     <title>Moh Angga Yunus</title>
-
     <meta name="author" content="Moh Angga Yunus" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
   </head>
-
   <body>
     <table style="width: 100%; max-width: 800px; border: 0px; border-spacing: 0px; border-collapse: separate; margin-right: auto; margin-left: auto">
       <tbody>
@@ -20,186 +17,74 @@
               <tbody>
                 <tr style="padding: 0px">
                   <td style="padding: 2.5%; width: 63%; vertical-align: middle">
-                    <p class="name" style="text-align: center">Moh Angga Yunus</p>
-                    <p>
-                      Hi! I'm a Computer Science student at <a href="https://www.upnjatim.ac.id/">UPN "Veteran" Jawa Timur</a> and currently working as a Backend Developer Intern at CV FlyHigh Sinergi
-                      Indonesia. My interests lie in software development, autonomous systems, and applied research.<br />
-                      Before this, I led student research teams in autonomous maritime technology (achieving 2nd place at Kontes Kapal Indonesia 2024) and contributed to Natural Language Processing research in
-                      collaboration with <a href="https://www.brin.go.id/">BRIN</a>.
-                    </p>
+                    <p class="name" style="text-align: center" id="profile-name">Moh Angga Yunus</p>
+                    <p id="profile-bio"></p>
                     <p style="text-align: center">
-                      <a href="mailto:anggayunus139@gmail.com">Email</a> &nbsp;/&nbsp; <a href="data/CV_Anda.pdf">CV</a> &nbsp;/&nbsp; <a href="data/Bio_Anda.txt">Bio</a> &nbsp;/&nbsp;
-                      <a href="https://www.linkedin.com/in/moh-angga">LinkedIn</a> &nbsp;/&nbsp;
-                      <a href="https://github.com/anggamys">Github</a>
+                      <a id="profile-email" href="#">Email</a> &nbsp;/&nbsp; 
+                      <a id="profile-cv" href="#">CV</a> &nbsp;/&nbsp; 
+                      <a id="profile-bio-link" href="#">Bio</a> &nbsp;/&nbsp;
+                      <a id="profile-linkedin" href="#">LinkedIn</a> &nbsp;/&nbsp;
+                      <a id="profile-github" href="#">Github</a>
                     </p>
                   </td>
                   <td style="padding: 2.5%; width: 37%; max-width: 37%">
-                    <a href="images/IMG_5714.JPG"
-                      ><img
-                        alt="profile photo"
-                        src="images/IMG_5714.JPG"
-                        class="hoverZoomLink"
-                        style="width: 100%; max-width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center bottom; border-radius: 50%"
-                    /></a>
+                    <a href="#"><img id="profile-image" alt="profile photo" src="images/IMG_5714.JPG" class="hoverZoomLink" style="width: 100%; max-width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center bottom; border-radius: 50%" /></a>
                   </td>
                 </tr>
               </tbody>
             </table>
+            
+            <!-- Experiences Section -->
             <table style="width: 100%; border: 0px; border-spacing: 0px; border-collapse: separate; margin-right: auto; margin-left: auto">
               <tbody>
                 <tr>
                   <td style="padding: 16px; width: 100%; vertical-align: middle">
-                    <h2>Research</h2>
-                    <p>
-                      I have hands-on experience building software systems, from backend architectures and internal web operations to autonomous systems and NLP research models. Below are some of my projects
-                      and research experiences.
-                    </p>
+                    <h2>Experiences</h2>
                   </td>
                 </tr>
               </tbody>
             </table>
             <table style="width: 100%; border: 0px; border-spacing: 0px 10px; border-collapse: separate; margin-right: auto; margin-left: auto">
+              <tbody id="experiences-list">
+              </tbody>
+            </table>
+
+            <!-- Projects Section -->
+            <table style="width: 100%; border: 0px; border-spacing: 0px; border-collapse: separate; margin-right: auto; margin-left: auto">
               <tbody>
-                <tr onmouseout="project1_stop()" onmouseover="project1_start()">
-                  <td style="padding: 16px; width: 25%; vertical-align: middle">
-                    <div class="one">
-                      <div class="two" id="project1_image">
-                        <img src="images/project_placeholder.png" width="160" style="object-fit: cover; aspect-ratio: 1/1" />
-                      </div>
-                      <img src="images/project_placeholder.png" width="160" style="object-fit: cover; aspect-ratio: 1/1" />
-                    </div>
-                    <script type="text/javascript">
-                      function project1_start() {
-                        document.getElementById('project1_image').style.opacity = '1';
-                      }
-                      function project1_stop() {
-                        document.getElementById('project1_image').style.opacity = '0';
-                      }
-                      project1_stop();
-                    </script>
-                  </td>
-                  <td style="padding: 16px; width: 75%; vertical-align: middle">
-                    <a href="https://github.com/anggamys">
-                      <span class="papertitle">Autonomous Surface Vessel (ASV) Prototype</span>
-                    </a>
-                    <br />
-                    <strong>Moh Angga Yunus (Research Team Lead)</strong>
-                    <br />
-                    <em>Kontes Kapal Indonesia (KKI)</em>, 2024 & 2025
-                    <br />
-                    <p>
-                      Led a cross-disciplinary team of 11 students to design and integrate unmanned vessel prototypes. Developed autonomous navigation and control systems, integrating multiple sensors, AI
-                      components, and real-time communication systems. Achieved 2nd place out of 20+ teams in KKI 2024.
-                    </p>
-                  </td>
-                </tr>
-
-                <tr onmouseout="project2_stop()" onmouseover="project2_start()">
-                  <td style="padding: 16px; width: 25%; vertical-align: middle">
-                    <div class="one">
-                      <div class="two" id="project2_image">
-                        <img src="images/project_placeholder.png" width="160" style="object-fit: cover; aspect-ratio: 1/1" />
-                      </div>
-                      <img src="images/project_placeholder.png" width="160" style="object-fit: cover; aspect-ratio: 1/1" />
-                    </div>
-                    <script type="text/javascript">
-                      function project2_start() {
-                        document.getElementById('project2_image').style.opacity = '1';
-                      }
-                      function project2_stop() {
-                        document.getElementById('project2_image').style.opacity = '0';
-                      }
-                      project2_stop();
-                    </script>
-                  </td>
-                  <td style="padding: 16px; width: 75%; vertical-align: middle">
-                    <a href="https://github.com/anggamys">
-                      <span class="papertitle">Natural Language Processing for Language Data Analysis</span>
-                    </a>
-                    <br />
-                    <strong>Research Assistant & Intern</strong>
-                    <br />
-                    <em>Badan Riset dan Inovasi Nasional (BRIN)</em>, 2025 - 2026
-                    <br />
-                    <p>
-                      Assisted in processing and preparing a language dataset of 110k+ words (data cleaning & feature engineering). Developed and evaluated NLP models to support research findings, and
-                      contributed to technical reporting and scientific publication preparation.
-                    </p>
-                  </td>
-                </tr>
-
-                <tr onmouseout="project3_stop()" onmouseover="project3_start()">
-                  <td style="padding: 16px; width: 25%; vertical-align: middle">
-                    <div class="one">
-                      <div class="two" id="project3_image">
-                        <img src="images/project_placeholder.png" width="160" style="object-fit: cover; aspect-ratio: 1/1" />
-                      </div>
-                      <img src="images/project_placeholder.png" width="160" style="object-fit: cover; aspect-ratio: 1/1" />
-                    </div>
-                    <script type="text/javascript">
-                      function project3_start() {
-                        document.getElementById('project3_image').style.opacity = '1';
-                      }
-                      function project3_stop() {
-                        document.getElementById('project3_image').style.opacity = '0';
-                      }
-                      project3_stop();
-                    </script>
-                  </td>
-                  <td style="padding: 16px; width: 75%; vertical-align: middle">
-                    <a href="https://github.com/anggamys">
-                      <span class="papertitle">PEMIRA Online Voting System</span>
-                    </a>
-                    <br />
-                    <strong>Head of Website Division</strong>
-                    <br />
-                    <em>Himpunan Mahasiswa Informatika</em>, 2024
-                    <br />
-                    <p>Led a team of 3 to develop and deploy a real-time online voting system serving 200+ voters with zero downtime. Built and optimized the system to support reliable election operations.</p>
-                  </td>
-                </tr>
-
-                <tr onmouseout="project4_stop()" onmouseover="project4_start()">
-                  <td style="padding: 16px; width: 25%; vertical-align: middle">
-                    <div class="one">
-                      <div class="two" id="project4_image">
-                        <img src="images/project_placeholder.png" width="160" style="object-fit: cover; aspect-ratio: 1/1" />
-                      </div>
-                      <img src="images/project_placeholder.png" width="160" style="object-fit: cover; aspect-ratio: 1/1" />
-                    </div>
-                    <script type="text/javascript">
-                      function project4_start() {
-                        document.getElementById('project4_image').style.opacity = '1';
-                      }
-                      function project4_stop() {
-                        document.getElementById('project4_image').style.opacity = '0';
-                      }
-                      project4_stop();
-                    </script>
-                  </td>
-                  <td style="padding: 16px; width: 75%; vertical-align: middle">
-                    <a href="https://github.com/anggamys">
-                      <span class="papertitle">PIBITI 2025 LMS</span>
-                    </a>
-                    <br />
-                    <strong>Website Developer Staff</strong>
-                    <br />
-                    <em>Himpunan Mahasiswa Informatika</em>, 2025
-                    <br />
-                    <p>
-                      Refactored backend features and resolved issues for the Learning Management System, improving system stability. Optimized queries and debugged issues to ensure stable operation for 75
-                      participants.
-                    </p>
+                <tr>
+                  <td style="padding: 16px; width: 100%; vertical-align: middle">
+                    <h2>Projects & Activities</h2>
                   </td>
                 </tr>
               </tbody>
             </table>
+            <table style="width: 100%; border: 0px; border-spacing: 0px 10px; border-collapse: separate; margin-right: auto; margin-left: auto">
+              <tbody id="projects-list">
+              </tbody>
+            </table>
+
+            <!-- Achievements Section -->
+            <table style="width: 100%; border: 0px; border-spacing: 0px; border-collapse: separate; margin-right: auto; margin-left: auto">
+              <tbody>
+                <tr>
+                  <td style="padding: 16px; width: 100%; vertical-align: middle">
+                    <h2>Achievements</h2>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table style="width: 100%; border: 0px; border-spacing: 0px 10px; border-collapse: separate; margin-right: auto; margin-left: auto">
+              <tbody id="achievements-list">
+              </tbody>
+            </table>
+
             <table style="width: 100%; border: 0px; border-spacing: 0px; border-collapse: separate; margin-right: auto; margin-left: auto">
               <tbody>
                 <tr>
                   <td style="padding: 0px">
                     <br />
-                    <p style="text-align: right; font-size: small">Template ini dimodifikasi dari <a href="https://github.com/jonbarron/jonbarron_website">sumber asli Jon Barron</a>.</p>
+                    <p style="text-align: right; font-size: small">Template dimodifikasi dari <a href="https://github.com/jonbarron/jonbarron_website">sumber asli Jon Barron</a>.</p>
                   </td>
                 </tr>
               </tbody>
@@ -208,5 +93,8 @@
         </tr>
       </tbody>
     </table>
+    
+    <!-- Load data dynamically -->
+    <script src="template_data.js"></script>
   </body>
 </html>
