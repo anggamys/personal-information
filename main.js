@@ -20,7 +20,7 @@ function renderItem(item) {
         <span class="papertitle">${item.title}</span>
       </a>
       <br />
-      <strong>${item.companyUrl ? `<a href="${item.companyUrl}" style="color:inherit; text-decoration:none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">${item.role}</a>` : item.role}</strong>
+      <strong>${item.companyUrl ? `<a href="${item.companyUrl}">${item.role}</a>` : item.role}</strong>
       <br />
       <em>${item.event || item.location}</em>, ${item.date}
       <br />
