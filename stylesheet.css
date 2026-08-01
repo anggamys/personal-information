@@ -223,3 +223,8 @@ span.highlight {
     margin: 0 auto;
   }
 }
+
+/* Add subtle rounded corners to project/experience images */
+.one img {
+  border-radius: 8px;
+}
