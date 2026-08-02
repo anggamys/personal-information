@@ -99,7 +99,7 @@ const langID = {
       "role": "Pembicara",
       "event": "Veteran Robotics | UPN Veteran Jawa Timur",
       "date": "Mei 2026",
-      "description": "Menyampaikan sesi teknis mengenai dasar-dasar computer vision bagi anggota Komunitas Robotika Veteran, menggabungkan konsep teoretis dengan implementasi praktis. Menyajikan konsep utama computer vision, termasuk pemrosesan gambar, ekstraksi fitur, dan aplikasi dunia nyata pada sistem robotika cerdas. Memfasilitasi diskusi interaktif dan pemecahan masalah secara langsung untuk memperkuat pemahaman peserta mengenai dasar-dasar computer vision. Berbagi wawasan praktis dari pengalaman riset dan proyek, menyoroti penerapan computer vision dalam robotika dan sistem otonom.",
+      "description": "Menyampaikan sesi teknis mengenai dasar-dasar computer vision bagi Komunitas Robotika Veteran. Menyajikan konsep utama (pemrosesan gambar, ekstraksi fitur) serta memfasilitasi pemecahan masalah interaktif terkait penerapannya pada sistem otonom dunia nyata.",
       "image": "images/project_cv_fundamentals.webp",
       "links": []
     },

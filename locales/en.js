@@ -99,7 +99,7 @@ const langEN = {
       "role": "Speaker",
       "event": "Veteran Robotics | UPN Veteran Jawa Timur",
       "date": "May 2026",
-      "description": "Delivered a technical session on computer vision fundamentals for members of the Veteran Robotics Community, combining theoretical concepts with practical implementation. Presented core computer vision concepts, including image processing, feature extraction, and real-world applications in intelligent robotic systems. Facilitated interactive discussions and hands-on problem solving to strengthen participants' understanding of computer vision fundamentals. Shared practical insights from research and project experience, highlighting the application of computer vision in robotics and autonomous systems.",
+      "description": "Delivered a technical session on computer vision fundamentals for the Veteran Robotics Community. Presented core concepts (image processing, feature extraction) and facilitated interactive problem-solving on their real-world applications in autonomous systems.",
       "image": "images/project_cv_fundamentals.webp",
       "links": []
     },
