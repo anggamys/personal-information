@@ -94,6 +94,16 @@ const langID = {
   ],
   "projects": [
     {
+      "id": "proj_cv_fundamentals",
+      "title": "Sesi Teknis Dasar-Dasar Computer Vision",
+      "role": "Pembicara / Fasilitator",
+      "event": "Komunitas Robotika Veteran",
+      "date": "2024",
+      "description": "Menyampaikan sesi teknis mengenai dasar-dasar computer vision bagi anggota Komunitas Robotika Veteran, menggabungkan konsep teoretis dengan implementasi praktis. Menyajikan konsep utama computer vision, termasuk pemrosesan gambar, ekstraksi fitur, dan aplikasi dunia nyata pada sistem robotika cerdas. Memfasilitasi diskusi interaktif dan pemecahan masalah secara langsung untuk memperkuat pemahaman peserta mengenai dasar-dasar computer vision. Berbagi wawasan praktis dari pengalaman riset dan proyek, menyoroti penerapan computer vision dalam robotika dan sistem otonom.",
+      "image": "images/project_cv_fundamentals.webp",
+      "links": []
+    },
+    {
       "id": "proj1",
       "title": "Publikasi, Dokumentasi, dan Desain",
       "role": "Anggota Panitia (KKN)",
