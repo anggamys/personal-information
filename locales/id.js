@@ -40,17 +40,6 @@ const langID = {
       "links": []
     },
     {
-      "id": "exp2",
-      "title": "Intern Riset",
-      "role": "Badan Riset dan Inovasi Nasional (BRIN)",
-      "companyUrl": "https://www.brin.go.id/",
-      "location": "Jakarta, Indonesia",
-      "date": "Jan - Mei 2026",
-      "description": "Mengembangkan dan mengevaluasi model pemrosesan bahasa serta mengintegrasikannya ke dalam sistem anotasi berbasis web untuk mendukung alur kerja riset. Melakukan persiapan data, eksperimen model, dan evaluasi performa. Berkontribusi pada publikasi ilmiah.",
-      "image": "images/project_placeholder.png",
-      "links": []
-    },
-    {
       "id": "exp3",
       "title": "Backend Developer Intern",
       "role": "CV FlyHigh Sinergi Indonesia",
@@ -58,6 +47,17 @@ const langID = {
       "location": "Surabaya, Indonesia",
       "date": "Mar - Jun 2026",
       "description": "Mengembangkan layanan backend menggunakan arsitektur modular. Mengintegrasikan layanan gateway pembayaran pihak ketiga dan membuat dokumentasi API komprehensif. Mengimplementasikan pengujian API otomatis dan uji beban (load testing) menggunakan k6.",
+      "image": "images/project_placeholder.png",
+      "links": []
+    },
+    {
+      "id": "exp2",
+      "title": "Intern Riset",
+      "role": "Badan Riset dan Inovasi Nasional (BRIN)",
+      "companyUrl": "https://www.brin.go.id/",
+      "location": "Jakarta, Indonesia",
+      "date": "Jan - Mei 2026",
+      "description": "Mengembangkan dan mengevaluasi model pemrosesan bahasa serta mengintegrasikannya ke dalam sistem anotasi berbasis web untuk mendukung alur kerja riset. Melakukan persiapan data, eksperimen model, dan evaluasi performa. Berkontribusi pada publikasi ilmiah.",
       "image": "images/project_placeholder.png",
       "links": []
     },
@@ -94,16 +94,6 @@ const langID = {
   ],
   "projects": [
     {
-      "id": "proj_cv_fundamentals",
-      "title": "Sesi Teknis Dasar-Dasar Computer Vision",
-      "role": "Pembicara",
-      "event": "Veteran Robotics | UPN Veteran Jawa Timur",
-      "date": "Mei 2026",
-      "description": "Menyampaikan sesi teknis mengenai dasar-dasar computer vision bagi Komunitas Robotika Veteran. Menyajikan konsep utama (pemrosesan gambar, ekstraksi fitur) serta memfasilitasi pemecahan masalah interaktif terkait penerapannya pada sistem otonom dunia nyata.",
-      "image": "images/project_cv_fundamentals.webp",
-      "links": []
-    },
-    {
       "id": "proj1",
       "title": "Publikasi, Dokumentasi, dan Desain",
       "role": "Anggota Panitia (KKN)",
@@ -111,6 +101,16 @@ const langID = {
       "date": "Jul 2026 - Sekarang",
       "description": "Mendesain konten visual untuk media sosial dan publikasi acara. Mendokumentasikan kegiatan lapangan melalui fotografi dan videografi. Berkolaborasi untuk mengembangkan konten digital.",
       "image": "images/project_placeholder.png",
+      "links": []
+    },
+    {
+      "id": "proj_cv_fundamentals",
+      "title": "Sesi Teknis Dasar-Dasar Computer Vision",
+      "role": "Pembicara",
+      "event": "Veteran Robotics | UPN Veteran Jawa Timur",
+      "date": "Mei 2026",
+      "description": "Menyampaikan sesi teknis mengenai dasar-dasar computer vision bagi Komunitas Robotika Veteran. Menyajikan konsep utama (pemrosesan gambar, ekstraksi fitur) serta memfasilitasi pemecahan masalah interaktif terkait penerapannya pada sistem otonom dunia nyata.",
+      "image": "images/project_cv_fundamentals.webp",
       "links": []
     },
     {
@@ -134,22 +134,22 @@ const langID = {
       "links": [{"name": "github", "url": "https://github.com/anggamys"}]
     },
     {
-      "id": "proj4",
-      "title": "Informatics Competition Festival (ICF)",
-      "role": "Kepala Kompetisi Website Development",
-      "event": "Himpunan Mahasiswa Informatika",
-      "date": "Agt - Des 2024",
-      "description": "Mengkoordinasi tim untuk memastikan kelancaran eksekusi festival. Mendesain konsep kompetisi, kriteria penjurian, dan pedoman implementasi.",
-      "image": "images/project_placeholder.png",
-      "links": []
-    },
-    {
       "id": "proj5",
       "title": "Bootcamp Data Analyst Nasional",
       "role": "Staff Mentor",
       "event": "BEM FASILKOM",
       "date": "Sep - Des 2024",
       "description": "Mengembangkan materi pelatihan analisis data yang mudah dipahami bagi peserta bootcamp kampus. Memberikan sesi mentoring praktik secara langsung.",
+      "image": "images/project_placeholder.png",
+      "links": []
+    },
+    {
+      "id": "proj4",
+      "title": "Informatics Competition Festival (ICF)",
+      "role": "Kepala Kompetisi Website Development",
+      "event": "Himpunan Mahasiswa Informatika",
+      "date": "Agt - Des 2024",
+      "description": "Mengkoordinasi tim untuk memastikan kelancaran eksekusi festival. Mendesain konsep kompetisi, kriteria penjurian, dan pedoman implementasi.",
       "image": "images/project_placeholder.png",
       "links": []
     }
