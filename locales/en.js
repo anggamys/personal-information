@@ -100,7 +100,7 @@ const langEN = {
       "event": "UPN \"Veteran\" Jawa Timur",
       "date": "Jul 2026 - Present",
       "description": "Designed visual content for social media and event publications. Documented field activities through photography and videography. Collaborated to develop digital content communicating program outcomes.",
-      "image": "images/project_placeholder.png",
+      "image": "images/project_kkn.webp",
       "links": []
     },
     {

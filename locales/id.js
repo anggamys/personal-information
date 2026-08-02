@@ -100,7 +100,7 @@ const langID = {
       "event": "UPN \"Veteran\" Jawa Timur",
       "date": "Jul 2026 - Sekarang",
       "description": "Mendesain konten visual untuk media sosial dan publikasi acara. Mendokumentasikan kegiatan lapangan melalui fotografi dan videografi. Berkolaborasi untuk mengembangkan konten digital.",
-      "image": "images/project_placeholder.png",
+      "image": "images/project_kkn.webp",
       "links": []
     },
     {
