@@ -52,7 +52,7 @@ const langID = {
     },
     {
       "id": "exp2",
-      "title": "Intern Riset",
+      "title": "Asisten Riset",
       "role": "Badan Riset dan Inovasi Nasional (BRIN)",
       "companyUrl": "https://www.brin.go.id/",
       "location": "Jakarta, Indonesia",

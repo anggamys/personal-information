@@ -52,7 +52,7 @@ const langEN = {
     },
     {
       "id": "exp2",
-      "title": "Research Intern",
+      "title": "Research Assistant",
       "role": "Badan Riset dan Inovasi Nasional (BRIN)",
       "companyUrl": "https://www.brin.go.id/",
       "location": "Jakarta, Indonesia",
