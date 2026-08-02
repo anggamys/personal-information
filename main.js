@@ -7,6 +7,26 @@ function renderLinks(links) {
 }
 
 function renderItem(item) {
+  const isPlaceholder = !item.image || item.image.includes('project_placeholder.png');
+  
+  if (isPlaceholder) {
+    return `
+    <tr class="item-row">
+      <td class="project-content-col" colspan="2" style="padding: 16px; width: 100%; vertical-align: middle">
+        <a href="${item.links && item.links.length > 0 ? item.links[0].url : '#'}" ${item.links && item.links.length > 0 ? 'target="_blank" rel="noopener noreferrer"' : ''}>
+          <span class="papertitle">${item.title}</span>
+        </a>
+        <br />
+        ${item.role ? `<strong>${item.companyUrl ? `<a href="${item.companyUrl}" target="_blank" rel="noopener noreferrer">${item.role}</a>` : item.role}</strong><br />` : ''}
+        <em>${item.event || item.location}</em>, ${item.date}
+        <br />
+        ${renderLinks(item.links)}
+        <p>${item.description}</p>
+      </td>
+    </tr>
+    `;
+  }
+
   return `
   <tr class="item-row" onmouseout="document.getElementById('${item.id}_image').style.opacity = '0'" onmouseover="document.getElementById('${item.id}_image').style.opacity = '1'">
     <td class="project-image-col" style="padding: 16px; width: 25%; vertical-align: middle">
@@ -16,7 +36,6 @@ function renderItem(item) {
         </div>
         <img src="${item.image}" width="160" style="object-fit: cover; aspect-ratio: 1/1" />
       </div>
-      
     </td>
     <td class="project-content-col" style="padding: 16px; width: 75%; vertical-align: middle">
       <a href="${item.links && item.links.length > 0 ? item.links[0].url : '#'}" ${item.links && item.links.length > 0 ? 'target="_blank" rel="noopener noreferrer"' : ''}>
