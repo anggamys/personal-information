@@ -21,7 +21,7 @@ const langEN = {
     "location": "Surabaya, Indonesia",
     "bio": "Computer science student with hands-on experience in software development, autonomous systems, and applied research. Has led student research teams, built internal systems, and contributed to research projects in collaboration with national research institutions. Interested in working on practical systems that solve real problems through iteration and teamwork.",
     "email": "anggayunus139@gmail.com",
-    "cvLink": "data/CV_Anda.pdf",
+    "cvLink": "https://bit.ly/CVMohAnggaYunus",
     "bioLink": "data/Bio_Anda.txt",
     "linkedin": "https://www.linkedin.com/in/moh-angga",
     "portfolioLink": "https://bit.ly/MohAnggaYunus-Portfolio",

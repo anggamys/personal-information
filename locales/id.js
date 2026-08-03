@@ -21,7 +21,7 @@ const langID = {
     "location": "Surabaya, Indonesia",
     "bio": "Mahasiswa Ilmu Komputer dengan pengalaman praktis di bidang pengembangan perangkat lunak, sistem otonom, dan riset terapan. Pernah memimpin tim riset mahasiswa, membangun sistem internal, dan berkontribusi pada proyek riset bekerja sama dengan institusi riset nasional. Tertarik bekerja pada sistem praktis yang memecahkan masalah nyata melalui iterasi dan kerja tim.",
     "email": "anggayunus139@gmail.com",
-    "cvLink": "data/CV_Anda.pdf",
+    "cvLink": "https://bit.ly/CVMohAnggaYunus",
     "bioLink": "data/Bio_Anda.txt",
     "linkedin": "https://www.linkedin.com/in/moh-angga",
     "portfolioLink": "https://bit.ly/MohAnggaYunus-Portfolio",
