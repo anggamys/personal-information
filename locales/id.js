@@ -172,7 +172,7 @@ const langID = {
       "date": "Okt 2024",
       "description": "Meraih juara 2 dari 20+ tim universitas. Berkolaborasi dengan tim lintas disiplin untuk merancang, membangun, dan menguji prototipe ASV di lapangan.",
       "image": "images/project_placeholder.png",
-      "links": []
+      "links": [{"name": "Sertifikat", "url": "data/Sertifikat_KKI_2024.pdf"}]
     },
     {
       "id": "ach3",

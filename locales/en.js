@@ -172,7 +172,7 @@ const langEN = {
       "date": "Oct 2024",
       "description": "Achieved 2nd place out of 20+ university teams. Collaborated with an interdisciplinary team to design, build, and field-test an ASV prototype.",
       "image": "images/project_placeholder.png",
-      "links": []
+      "links": [{"name": "Certificate", "url": "data/Sertifikat_KKI_2024.pdf"}]
     },
     {
       "id": "ach3",
