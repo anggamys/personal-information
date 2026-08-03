@@ -171,7 +171,7 @@ const langID = {
       "event": "Kontes Kapal Indonesia (KKI) 2024",
       "date": "Okt 2024",
       "description": "Meraih juara 2 dari 20+ tim universitas. Berkolaborasi dengan tim lintas disiplin untuk merancang, membangun, dan menguji prototipe ASV di lapangan.",
-      "image": "images/project_placeholder.png",
+      "image": "images/cert_kki_2024.webp",
       "links": [{"name": "Sertifikat", "url": "data/Sertifikat_KKI_2024.pdf"}]
     },
     {

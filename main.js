@@ -30,12 +30,14 @@ function renderItem(item) {
   return `
   <tr class="item-row" onmouseout="document.getElementById('${item.id}_image').style.opacity = '0'" onmouseover="document.getElementById('${item.id}_image').style.opacity = '1'">
     <td class="project-image-col" style="padding: 16px; width: 25%; vertical-align: middle">
-      <div class="one">
-        <div class="two" id="${item.id}_image" style="opacity: 0; transition: opacity 0.2s;">
+      <a href="${item.links && item.links.length > 0 ? item.links[0].url : '#'}" ${item.links && item.links.length > 0 ? 'target="_blank" rel="noopener noreferrer"' : ''} style="display: block;">
+        <div class="one">
+          <div class="two" id="${item.id}_image" style="opacity: 0; transition: opacity 0.2s;">
+            <img src="${item.image}" width="160" style="object-fit: cover; aspect-ratio: 1/1" />
+          </div>
           <img src="${item.image}" width="160" style="object-fit: cover; aspect-ratio: 1/1" />
         </div>
-        <img src="${item.image}" width="160" style="object-fit: cover; aspect-ratio: 1/1" />
-      </div>
+      </a>
     </td>
     <td class="project-content-col" style="padding: 16px; width: 75%; vertical-align: middle">
       <a href="${item.links && item.links.length > 0 ? item.links[0].url : '#'}" ${item.links && item.links.length > 0 ? 'target="_blank" rel="noopener noreferrer"' : ''}>
