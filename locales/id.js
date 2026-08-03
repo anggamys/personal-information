@@ -22,7 +22,7 @@ const langID = {
     "bio": "Mahasiswa Ilmu Komputer dengan pengalaman praktis di bidang pengembangan perangkat lunak, sistem otonom, dan riset terapan. Pernah memimpin tim riset mahasiswa, membangun sistem internal, dan berkontribusi pada proyek riset bekerja sama dengan institusi riset nasional. Tertarik bekerja pada sistem praktis yang memecahkan masalah nyata melalui iterasi dan kerja tim.",
     "email": "anggayunus139@gmail.com",
     "cvLink": "https://bit.ly/CVMohAnggaYunus",
-    "bioLink": "data/Bio_Anda.txt",
+    "bioLink": "data/Bio_Anda.md",
     "linkedin": "https://www.linkedin.com/in/moh-angga",
     "portfolioLink": "https://bit.ly/MohAnggaYunus-Portfolio",
     "github": "https://github.com/anggamys",
