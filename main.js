@@ -135,7 +135,8 @@ function renderPortfolio(lang) {
     { id: 'profile-cv', url: data.profile.cvLink },
     { id: 'profile-bio-link', url: data.profile.bioLink },
     { id: 'profile-linkedin', url: data.profile.linkedin },
-    { id: 'profile-github', url: data.profile.github }
+    { id: 'profile-github', url: data.profile.github },
+    { id: 'profile-portfolio', url: data.profile.portfolioLink }
   ];
   
   linksToSet.forEach(link => {
